@@ -12,7 +12,7 @@ To install the plugin, follow these instructions.
 
 ```bash
 ddev composer require wearelucid/craft-netlify-deploy
-ddev php craft install netlify-deploy
+ddev php craft plugin/install netlify-deploy
 ```
 
 Add environment variables to your `.env` file:
