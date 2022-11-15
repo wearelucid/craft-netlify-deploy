@@ -1,12 +1,12 @@
 {% extends '_layouts/cp' %}
 {# Register asset bundle to initiate javascript file and use css styles #}
-{% do view.registerAssetBundle("wearelucid\\netlifydeploybutton\\PluginAssets") %}
+{% do view.registerAssetBundle("wearelucid\\netlifydeploy\\PluginAssets") %}
 
 {% set title = 'Publish to Netlify' %}
 
 {% block content %}
-    {% set netlifyHookUrl = craft.app.plugins.getPlugin('netlify-deploy-button').settings.getHookUrl() %}
-    {% set netlifyBadgeUrl = craft.app.plugins.getPlugin('netlify-deploy-button').settings.getBadgeUrl() %}
+    {% set netlifyHookUrl = craft.app.plugins.getPlugin('netlify-deploy').settings.getHookUrl() %}
+    {% set netlifyBadgeUrl = craft.app.plugins.getPlugin('netlify-deploy').settings.getBadgeUrl() %}
 
     {% if netlifyHookUrl %}
         <h2>Deploy!</h2>

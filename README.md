@@ -11,8 +11,8 @@ This plugin requires Craft CMS 4.2.0 or later.
 To install the plugin, follow these instructions.
 
 ```bash
-ddev composer require wearelucid/craft-netlify-deploy-button
-ddev php craft install netlify-deploy-button
+ddev composer require wearelucid/craft-netlify-deploy
+ddev php craft install netlify-deploy
 ```
 
 Add environment variables to your `.env` file:

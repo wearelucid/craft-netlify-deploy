@@ -1,14 +1,14 @@
 <?php
-namespace wearelucid\netlifydeploybutton;
+namespace wearelucid\netlifydeploy;
 
-use wearelucid\netlifydeploybutton\models\SettingsModel;
+use wearelucid\netlifydeploy\models\SettingsModel;
 
 use craft\events\RegisterComponentTypesEvent;
 use craft\services\Dashboard;
 use yii\base\Event;
 
-// NetlifyDeployButton = PluginHandle
-class NetlifyDeployButton extends \craft\base\Plugin
+// NetlifyDeploy = PluginHandle
+class NetlifyDeploy extends \craft\base\Plugin
 {
   public bool $hasCpSection = true;
 
@@ -23,7 +23,7 @@ class NetlifyDeployButton extends \craft\base\Plugin
   // Define Settings page
   // protected function settingsHtml()
   // {
-  //   return \Craft::$app->getView()->renderTemplate('netlify-deploy-button/_settings', [
+  //   return \Craft::$app->getView()->renderTemplate('netlify-deploy/_settings', [
   //     'settings' => $this->getSettings()
   //   ]);
   // }

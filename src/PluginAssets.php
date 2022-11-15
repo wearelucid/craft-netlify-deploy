@@ -1,5 +1,5 @@
 <?php
-namespace wearelucid\netlifydeploybutton;
+namespace wearelucid\netlifydeploy;
 
 use craft\web\AssetBundle;
 use craft\web\assets\cp\CpAsset;
@@ -9,7 +9,7 @@ class PluginAssets extends AssetBundle
     public function init()
     {
         // define the path that your publishable resources live
-        $this->sourcePath = '@wearelucid/netlifydeploybutton/resources';
+        $this->sourcePath = '@wearelucid/netlifydeploy/resources';
 
         // define the dependencies
         $this->depends = [

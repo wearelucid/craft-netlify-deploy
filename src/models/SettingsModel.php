@@ -1,5 +1,5 @@
 <?php
-namespace wearelucid\netlifydeploybutton\models;
+namespace wearelucid\netlifydeploy\models;
 
 use craft\base\Model;
 use craft\helpers\App;
