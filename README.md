@@ -1,4 +1,4 @@
-# Craft CMS Netlify Deploy Button Plugin for Craft CMS 4
+# Netlify Deploy Button Plugin for Craft CMS 4
 
 *Basic* plugin to add a button to deploy to Netlify and show the status badge.
 
