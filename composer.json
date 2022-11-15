@@ -1,7 +1,7 @@
 {
   "name": "wearelucid/craft-netlify-deploy",
   "description": "A plugin to display a button to trigger a netlify deploy.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "craft-plugin",
   "keywords": [
     "craft",
