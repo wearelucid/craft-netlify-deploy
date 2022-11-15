@@ -1,0 +1,42 @@
+{
+  "name": "wearelucid/craft-netlify-deploy-button",
+  "description": "A plugin to display a button to trigger a netlify deploy.",
+  "version": "1.0.0",
+  "type": "craft-plugin",
+  "keywords": [
+    "craft",
+    "cms",
+    "craftcms",
+    "craft-plugin",
+    "craft-netlify-deploy-button"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Lucid <buero@wearelucid.ch>",
+      "homepage": "https://www.wearelucid.ch"
+    }
+  ],
+  "support": {
+    "email": "buero@wearelucid.ch",
+    "issues": "https://github.com/wearelucid/craft-netlify-deploy-button/issues?state=open",
+    "source": "https://github.com/wearelucid/craft-netlify-deploy-button",
+    "docs": "https://github.com/wearelucid/craft-netlify-deploy-button/blob/master/README.md"
+  },
+  "require": {
+    "craftcms/cms": "^4.2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "wearelucid\\netlifydeploybutton\\": "src/"
+    }
+  },
+  "extra": {
+    "name": "Netlify Deploy Button",
+    "handle": "netlify-deploy-button",
+    "developer": "Lucid",
+    "developerUrl": "https://www.wearelucid.ch",
+    "documentationUrl": "https://github.com/wearelucid/craft-netlify-deploy-button/blob/master/README.md",
+    "class": "wearelucid\\netlifydeploybutton\\NetlifyDeployButton"
+  }
+}

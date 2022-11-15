@@ -1,0 +1,27 @@
+{% extends '_layouts/cp' %}
+{# Register asset bundle to initiate javascript file and use css styles #}
+{% do view.registerAssetBundle("wearelucid\\netlifydeploybutton\\PluginAssets") %}
+
+{% set title = 'Publish to Netlify' %}
+
+{% block content %}
+    {% set netlifyHookUrl = craft.app.plugins.getPlugin('netlify-deploy-button').settings.getHookUrl() %}
+    {% set netlifyBadgeUrl = craft.app.plugins.getPlugin('netlify-deploy-button').settings.getBadgeUrl() %}
+
+    {% if netlifyHookUrl %}
+        <h2>Deploy!</h2>
+        Everything set. Your build hook is saved and you are good to go! ✅<br>
+
+        <div class="button-wrapper">
+            <button style="font-size: inherit;" class="btn icon submit js-deploy-button" data-build-hook="{{ netlifyHookUrl }}">Deploy Website</button>
+        </div>
+
+        {% if netlifyBadgeUrl %}
+            <img id="netlify-deployment-badge" alt="netlify-deployment-badge" data-badge-url="{{ netlifyBadgeUrl }}" src="{{ netlifyBadgeUrl }}" />
+        {% else %}
+            <p class="warning">Show a Netlify Badge with auto-refresh by adding <code>NETLIFY_BADGE_URL</code> environment variable.</p>
+        {% endif %}
+    {% else %}
+        <p class="warning">Before publishing you have to set the Netlify build hook with <code>NETLIFY_HOOK_URL</code> environment variable.</p>
+    {% endif %}
+{% endblock %}
