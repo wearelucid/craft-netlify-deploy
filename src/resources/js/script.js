@@ -5,7 +5,14 @@
     badgeUrl = badge.dataset.badgeUrl;
 
     setInterval(function() {
-      badge.src = badgeUrl + '?t=' + new Date().getTime();
+      const now = new Date().getTime();
+
+      // check if the badge url has a query string
+      if (badgeUrl.indexOf('?') > -1) {
+        badge.src = badgeUrl + '&t=' + now;
+      } else {
+        badge.src = badgeUrl + '?t=' + now;
+      }
     }, 2000);
   }
 
